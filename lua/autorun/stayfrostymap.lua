@@ -11,7 +11,7 @@ if SERVER then
 
     hook.Add("PlayerLoadout", "GiveWeapons", function(ply) return false end)
     hook.Add("PlayerSwitchFlashlight", "DisableFlashlight", function(ply, enabled) return false end)
-    hook.Add("PlayerNoClip", "StayFrosty_AntiNoclip", function(ply, desiredState) return true end)
+    hook.Add("PlayerNoClip", "StayFrosty_AntiNoclip", function(ply, desiredState) return false end)
 
     hook.Add("PlayerInitialSpawn", "WelcomeMsg", function(ply)
         ply:SetNWString("StayFrosty_ActiveCheckpoint", "none")
